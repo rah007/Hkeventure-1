@@ -48,7 +48,7 @@ def Book(request,*args, **kwargs):
                          Email=Email, Mob_No=Mob_No, Country=Country,
                          State=State, Zip=Zip, 
                          paymentMethod=paymentMethod,Pay_ID=Pay_ID,
-                         # Book_Date=datetime.today()
+                         # Book_Date=datetime.today()kk
                          )
         trek.save() 
     return  render(request, "trek_v2/Book.html")
