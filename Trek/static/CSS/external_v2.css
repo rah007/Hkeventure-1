@@ -1,0 +1,81 @@
+a {
+    color: green;
+}
+
+.navbar-brand{
+    background-color: green;
+    border: 1px rgb(128, 36, 0) solid;
+    /* color: gold; */
+}
+
+ul li .nav-link {
+    margin-left: 20px;
+    color: green;
+    font-weight: bolder;
+    /* background-color: green; */
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.container-fluid{
+height: 610px;
+border: 5px green solid;
+/* margin-top: 10px; */
+}
+
+img{
+    height: 600px;
+    width: 100px;
+}
+
+.trek-section{
+    height: 250px;
+    width: 348px;
+    border: 2px green solid;
+    border-radius: 10px;
+}
+
+
+.carousel-caption h5{
+    background-color:  rgb(48, 25, 45);
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 1000px;   
+}
+
+.container{
+    background-color: rgb(243, 233, 233);
+    /* height: ; */
+}
+.container-book{
+    background-color: rgb(226, 75, 95);
+    width: 50rem;
+    border: .1rem green solid;
+    margin-top: 3rem;
+    border-radius: 1rem;
+    margin-left: 16rem;
+    padding-left: 2rem;
+    /* height: ; */
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    color: green;
+}
+
+.header1{
+    margin-top: 1rem;
+}
+
+#trekoption{
+    font-size: .1rem;
+    color: green;
+}
+
+/* section -try */
+
+p{
+    color: teal;
+}

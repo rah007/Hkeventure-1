@@ -1,0 +1,24 @@
+source ~/anaconda3/bin/activate root
+
+
+Q3 color same portfolio ka dotted line no hit remove, lender count check, (remove new book tag), ever delinquent , delinquent in last 12 month, trades open in last 6 month,
+
+total exposure ceck 1.25L bucket
+in total secured exposure what product have been in tis considered
+new to bureau or ficcl in loan cycle
+lender count >=4 tak bucket
+
+remove offus tradeline
+
+ever delinquent check live or clsed 
+club partenerhip and owened
+
+
+
+add
+age wise
+vintage in bureau 
+w/o in bureau, are we onboarding them
+#enqury in the booking month
+
+

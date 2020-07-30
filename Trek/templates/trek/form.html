@@ -1,0 +1,48 @@
+<!-- {% extends 'trek/base.html' %}
+{% load static %}
+{% block content %} -->
+<html>
+    <head>
+        <title>Hikeventure</title>
+        <link href="{% static 'CSS/external.css' %}" rel="stylesheet" type="text/css">
+        <link rel='shortcut icon' href='https://backend.traviyo.com/../Images/HomePageSettingss/Laviral_10232/637115801515241410_temp.png' /><meta name="theme-color" content="#ffffff" />
+        <body>
+            <h2><span>Hikeventure</span></h2>
+            
+            
+            <form action="." method="POST"> {% csrf_token %}
+                
+                <h2>Please Fill up the form</h2>
+                <br />
+                {{ form.as_p}}
+                <!-- <label for="Trek">Choose a Trek:</label> -->
+                <!-- <select id="Trek-Name" name="Trek" required>
+                  <option value="Select" selected>--Select the trek--</option>
+                  <option value="Chadar" >Chadar</option>
+                  <option value="Nubra valley">Nubra valley</option>
+                  <option value="Sham valley" >Sham valley</option>
+                  <option value="Siachen Base Camp">Siachen Base Camp</option>
+                </select> <br /> -->
+                <!-- <input type="submit"><br /> -->
+                <!-- <input id="select" name="Date" type="date" required /><br/>
+                <input name="Name" placeholder="Full Name" type="text" required /><br/>
+                <input name="Total People" placeholder="Total candidate" type="number" required /><br/>
+                <select id="Trek-Name" name="Trek" required>
+                    <option value="Select" selected>--Select the Gender--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select> <br />
+                <input name="Email" placeholder="Email" type="email" required /><br/>
+                <input name="Contact No." placeholder="Mob No." type="number" required /><br/>
+                <input name="State" placeholder="State" type="text" required /><br/>
+                <input name="City" placeholder="City" type="text" required /><br/> -->
+                <input name="Pin Code1" placeholder="Pin Code1" type="number" required /><br/>
+                <input type="Submit" value="Save" />
+                <!-- <button type="Submit" class="Submit">Pay</button> -->
+            </form>
+            
+        </body>
+    </head>
+</html>
+
+<!-- {% endblock %} -->
