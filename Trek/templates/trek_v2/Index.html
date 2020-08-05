@@ -10,8 +10,6 @@ Home
 </head>
 
 <body>
-
-
   <div class="container-fluid px-0">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -22,24 +20,24 @@ Home
 
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="{% static 'images/chadar2.jpg' %}" class="d-block w-100" alt="...">
+          <img src="{% static 'images/nubra.jpeg' %}" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Chadar trek</h5>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h5>Nubra valley</h5>
+            <p>One of the most beautiful and pleasant valley</p>
           </div>
         </div>
         <div class="carousel-item">
           <img src="{% static 'images/sham1.jpg' %}" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Sham valley</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Ladakhi culture with home stay hospitality</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="{% static 'images/nubra.jpeg' %}" class="d-block w-100" alt="...">
+          <img src="{% static 'images/chadar2.jpg' %}" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Nubra Valley</h5>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h5>Chadar Trek</h5>
+            <p>Frozen river trek. full of adventure</p>
           </div>
         </div>
       </div>
@@ -68,9 +66,106 @@ Home
               content. This content is a little bit longer.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <a href="/Book"></a><button type="button" class="btn btn-sm btn-outline-secondary">Details</button></a>
-                <a href="/Book"><button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
-                    data-target="#myModal">Book</button></a>
+                <!-- Pop up section -->
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                  data-target="#myModal">Send query</button>
+                <!-- Modal -->
+                
+                  <div class="modal fade" id="myModal" role="dialog">
+
+                    <div class="modal-dialog">
+                      
+                      <!-- Modal content-->
+                      <div class="modal-content">
+                        <div class="query">
+                        <div class="modal-header">
+                          <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                          <h5 class="modal-title">Please send us your query</h5>
+                        </div>
+                        <div class="modal-body">
+                          <form action="." method="post"> {% csrf_token %}
+                            <div class="row">
+                              <div class="col-md-6 mb-3">
+                                <label for="firstName">First name</label>
+                                <input type="text" class="form-control" name="firstName" id="firstName" placeholder=""
+                                  value="" required="">
+                                <div class="invalid-feedback">
+                                  Valid first name is required.
+                                </div>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" name="lastName" id="lastName" placeholder=""
+                                  value="" required="">
+                                <div class="invalid-feedback">
+                                  Valid last name is required.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-9 mb-3">
+                                <label class="trekoption my-0" for="Adventure">Choose your Adventure </label></br>
+                                <small>Trek-Road Trip-Rock Climbing-River Rafting</small>
+                                <select class="custom-select d-block w-100" name="Adventure" id="Adventure" required="">
+                                  <option value="">Choose...</option>
+                                  <option>Chadar Trek</option>
+                                  <!-- <option>Siachen Base Camp</option> -->
+                                  <option>Nubra Valley</option>
+                                  <option>Sham valley Home stay Summer/Winter Trek</option>
+                                  <option>Snow Leopard Trek</option>
+                                  <option>Markha Valley Home stay Trek</option>
+                                  <option>Stock kangri Trek</option>
+                                  <option>Rumtse To Tso moriri Lake Trek</option>
+                                  <option>Manali to Leh Road Trip</option>
+                                  <option>Srinagar to Leh Road Trip</option>
+                                  <option>Leh to Darcha via singkula Road Trip</option>
+                                  <option>Shey Valley Rock climbing</option>
+                                  <option>Suru valley Rock climbing</option>
+                                </select>
+                                <!-- <input type="text" class="form-control" name="Trek Name" id="firstName" placeholder="" value="" required=""> -->
+                                <div class="invalid-feedback">
+                                  Valid input is required.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6 mb-3">
+                                <label for="Email">Email </label>
+                                <input type="email" class="form-control" name="Email" id="Email"
+                                  placeholder="you@example.com" value="" required="">
+                                <div class="invalid-feedback">
+                                  Please enter a valid email address.
+                                </div>
+                              </div>
+                              <div class="col-md-6 mb-3">
+                                <label for="MobNo">Phone No</label>
+                                <input type="number" class="form-control" name="MobNo" id="MobNo" placeholder=""
+                                  required="">
+                                <div class="invalid-feedback">
+                                  Please enter your Phone number.
+                                </div>
+                              </div>
+                            </div>
+                            <label for="message">Comments:</label>
+                            <textarea id="message" name="message" rows="4" cols="50" placeholder="Comments">
+
+                          </textarea>
+                            <button class="btn btn-sm btn-outline-secondary" type="submit">Send</button>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+
+                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                          data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- pop up section end -->
+
+                <!-- <a href="/Book"></a><button type="button" class="btn btn-sm btn-outline-secondary">Details</button></a> -->
+                <a href="/Book"><button type="button" class="btn btn-sm btn-outline-secondary">Book</button></a>
               </div>
               <small class="text-muted">9 mins</small>
             </div>
@@ -86,7 +181,9 @@ Home
               content. This content is a little bit longer.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Details</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                  data-target="#myModal">Send query</button>
+                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
                 <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
               </div>
               <small class="text-muted">9 mins</small>
@@ -103,7 +200,9 @@ Home
               content. This content is a little bit longer.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Details</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                  data-target="#myModal">Send query</button>
+                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
                 <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
               </div>
               <small class="text-muted">9 mins</small>
@@ -121,7 +220,9 @@ Home
               content. This content is a little bit longer.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Details</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                  data-target="#myModal">Send query</button>
+                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
                 <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
               </div>
               <small class="text-muted">9 mins</small>
@@ -138,7 +239,9 @@ Home
               content. This content is a little bit longer.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Details</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                  data-target="#myModal">Send query</button>
+                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Details</button> -->
                 <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
               </div>
               <small class="text-muted">9 mins</small>
@@ -155,8 +258,10 @@ Home
               content. This content is a little bit longer.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                  data-target="#myModal">Send query</button>
+                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+                <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
               </div>
               <small class="text-muted">9 mins</small>
             </div>
@@ -173,8 +278,10 @@ Home
               content. This content is a little bit longer.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                  data-target="#myModal">Send query</button>
+                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+                <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
               </div>
               <small class="text-muted">9 mins</small>
             </div>
@@ -190,8 +297,10 @@ Home
               content. This content is a little bit longer.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                  data-target="#myModal">Send query</button>
+                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+                <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
               </div>
               <small class="text-muted">9 mins</small>
             </div>
@@ -207,8 +316,10 @@ Home
               content. This content is a little bit longer.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                  data-target="#myModal">Send query</button>
+                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+                <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
               </div>
               <small class="text-muted">9 mins</small>
             </div>
@@ -224,8 +335,10 @@ Home
               content. This content is a little bit longer.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                  data-target="#myModal">Send query</button>
+                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+                <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
               </div>
               <small class="text-muted">9 mins</small>
             </div>
@@ -241,8 +354,10 @@ Home
               content. This content is a little bit longer.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                  data-target="#myModal">Send query</button>
+                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+                <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
               </div>
               <small class="text-muted">9 mins</small>
             </div>
@@ -258,8 +373,10 @@ Home
               content. This content is a little bit longer.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                  data-target="#myModal">Send query</button>
+                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+                <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
               </div>
               <small class="text-muted">9 mins</small>
             </div>
@@ -275,8 +392,10 @@ Home
               content. This content is a little bit longer.</p>
             <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                  data-target="#myModal">Send query</button>
+                <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button> -->
+                <button type="button" class="btn btn-sm btn-outline-secondary">Book</button>
               </div>
               <small class="text-muted">9 mins</small>
             </div>

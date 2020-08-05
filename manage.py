@@ -3,6 +3,11 @@
 import os
 import sys
 
+# manual
+# from Hikeventure import settings
+
+# DJANGO_SETTINGS_MODULE=settings
+
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Hikeventure.settings')
@@ -18,4 +23,6 @@ def main():
 
 
 if __name__ == '__main__':
+    # manual
+    # os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Hikeventure.settings")
     main()

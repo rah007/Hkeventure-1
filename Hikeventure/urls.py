@@ -19,6 +19,11 @@ from django.urls import path, include
 from Trek.views import form_data, Home_view, test_view
 
 from Trek.views import Home, Treks, Road_Trip, River_Rafting, Contact,About,Details, Book
+# from Trek.views import Details
+
+admin.site.site_header = "Hikeventure Admin"
+admin.site.site_title = "Hikeventure Admin Portal"
+admin.site.index_title = "Welcome to Hikeventure Portal"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,12 +33,15 @@ urlpatterns = [
     path('test/', test_view),
     path('',     include('Trek.urls')),
     
-    path('Index/', Home),
+    path('Home/', Home),
     path('Treks/', Treks),
     path('road_trip/', Road_Trip),
     path('river_rafting/', River_Rafting),
     path('Contact/', Contact),
     path('About/', About),
-    path('Details/', Details),
+    # path('Details/', Details),
     path('Book/', Book),
+
+    
+    
 ]  

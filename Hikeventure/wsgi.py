@@ -12,5 +12,7 @@ import os
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Hikeventure.settings')
-
+# manual
+os.environ['DJANGO_SETTINGS_MODULE'] = 'Hikeventure.settings' 
+# settings.configure()
 application = get_wsgi_application()

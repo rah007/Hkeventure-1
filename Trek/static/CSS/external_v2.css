@@ -1,33 +1,54 @@
+/* {% load static %} */
 a {
     color: green;
 }
 
 .navbar-brand{
     background-color: green;
-    border: 1px rgb(128, 36, 0) solid;
+    border: 1px rgb(14, 26, 12) solid;
+    border-radius: 2rem;
     /* color: gold; */
 }
 
+
 ul li .nav-link {
     margin-left: 20px;
-    color: green;
+    color: rgb(1, 26, 1);
     font-weight: bolder;
     /* background-color: green; */
 }
 
 
 .navbar-dark .navbar-nav .nav-link {
-    color: white;
+    color: rgb(15, 13, 13);
+    background-color: transparent;
+    border-radius: 5rem;
+    border: 1px rgb(14, 26, 12) solid;;
 }
 
+
+.main-wrapper{
+    position: absolute;
+    z-index: 9999;
+    /* width: 100%; */
+    }
+    
+.menu-holder{
+    position: relative;
+    z-index: -1;
+    /* padding-right: 50px; */
+    } 
+
 .container-fluid{
-height: 610px;
+height: 42rem;
 border: 5px green solid;
-/* margin-top: 10px; */
+/* position: absolute; */
+/* margin-top: 0; */
+/* z-index: -1; */
 }
 
 img{
-    height: 600px;
+    height: 41.5rem;
     width: 100px;
 }
 
@@ -49,24 +70,31 @@ img{
 .container{
     background-color: rgb(243, 233, 233);
     /* height: ; */
+    
 }
-.container-book{
-    background-color: rgb(226, 75, 95);
-    width: 50rem;
-    border: .1rem green solid;
-    margin-top: 3rem;
-    border-radius: 1rem;
-    margin-left: 16rem;
-    padding-left: 2rem;
+#container-book{
+    /* background-color: transparent; */
+    width: 100%;
+    /* border: .1rem rgb(145, 95, 39) solid; */
+    /* margin-top: 5%; */
+    /* border-radius: 1%; */
+    /* margin-left: 0%; */
+    padding-left: 2%;
+    background-image: url("/static/images/sham1.jpg");
+    position: absolute;
+    
+    
+    /* background-color: #cccccc; */
     /* height: ; */
 }
+
 
 .btn-group-sm>.btn, .btn-sm {
     color: green;
 }
 
 .header1{
-    margin-top: 1rem;
+    margin-top: 10%;
 }
 
 #trekoption{
@@ -77,5 +105,39 @@ img{
 /* section -try */
 
 p{
-    color: teal;
+    color: rgb(3, 10, 10);
+}
+
+small{
+    color: rgb(0, 0, 0);
+}
+
+label{
+    color: rgb(2, 2, 2);
+    /* font-weight: bolder; */
+}
+h5{
+    color: white;  
+}
+
+.lead{
+    color: white;
+    font-weight: bolder;
+    background-color: green;
+    border-radius: 50%;
+    margin-top: 15%;
+
+}
+
+.modal.custom .modal-dialog {
+    width:100%;
+    /* margin:0 auto; */
+    /* background-color: rgb(164, 163, 214); */
+    /*add what you want here*/
+}
+
+.query{
+    width:100%;
+
+    background-color: rgb(162, 192, 169);
 }

@@ -1,0 +1,140 @@
+{% extends 'trek_v2/Index.html' %}
+{% load static %}
+{% block title %}
+Details
+{% endblock title %}
+
+{% block content %}
+
+<head>
+    <link href="{% static 'CSS/external_v2.css' %}" rel="stylesheet" type="text/css">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<p>rplace me</p>
+
+<div class="col-md-8 order-md-1">
+    <h5 class="mb-3">Please fill up the below details:</h5>
+    <hr class="mb-2">
+    <form action="." method="post"> {% csrf_token %}
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <label for="firstName">First name</label>
+                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="" value=""
+                    required="">
+                <div class="invalid-feedback">
+                    Valid first name is required.
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" name="lastName" id="lastName" placeholder="" value=""
+                    required="">
+                <div class="invalid-feedback">
+                    Valid last name is required.
+                </div>
+            </div>
+        </div>
+        <!-- Edit -->
+        <div class="row">
+            <div class="col-md-9 mb-3">
+                <label class="trekoption my-0" for="Adventure">Choose your Adventure </label></br>
+                <small>Trek-Road Trip-Rock Climbing-River Rafting</small>
+                <select class="custom-select d-block w-100" name="Adventure" id="Adventure" required="">
+                    <option value="">Choose...</option>
+                    <option>Chadar Trek</option>
+                    <!-- <option>Siachen Base Camp</option> -->
+                    <option>Numra Valley</option>
+                    <option>Sham valley Home stay Summer/Winter Trek</option>
+                    <option>Snow Leopard Trek</option>
+                    <option>Markha Valley Home stay Trek</option>
+                    <option>Stock kangri Trek</option>
+                    <option>Rumtse To Tso moriri Lake Trek</option>
+                    <option>Manali to Leh Road Trip</option>
+                    <option>Srinagar to Leh Road Trip</option>
+                    <option>Leh to Darcha via singkula Road Trip</option>
+                    <option>Shey Valley Rock climbing</option>
+                    <option>Suru valley Rock climbing</option>
+                </select>
+                <!-- <input type="text" class="form-control" name="Trek Name" id="firstName" placeholder="" value="" required=""> -->
+                <div class="invalid-feedback">
+                    Valid input is required.
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="TrekDate">Trek Date</label>
+                <input type="date" class="form-control mx-50" name="TrekDate" id="TrekDate" placeholder="" value=""
+                    required="">
+                <div class="invalid-feedback">
+                    Valid Trek Date is required.
+                </div>
+            </div>
+        </div>
+        <!-- Edit end -->
+
+        <div class="mb-3">
+            <label for="Email">Email </label>
+            <input type="email" class="form-control" name="Email" id="Email" placeholder="you@example.com" value=""
+                required="">
+            <div class="invalid-feedback">
+                Please enter a valid email address.
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="MobNo">Phone No</label>
+            <input type="number" class="form-control" name="MobNo" id="MobNo" placeholder="" required="">
+            <div class="invalid-feedback">
+                Please enter your Phone number.
+            </div>
+        </div>
+
+        <!-- <div class="mb-3">
+                    <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+                    <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                </div> -->
+
+        <div class="row">
+            <div class="col-md-5 mb-3">
+                <label for="Country">Country</label>
+                <input type="text" class="form-control" name="Country" id="Country" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                    Valid Country name is required.
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="State">State</label>
+                <input type="text" class="form-control" name="State" id="State" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                    Valid State name is required.
+                </div>
+            </div>
+            <!-- <div class="col-md-4 mb-3">   
+                        <label for="state">State</label>
+                        <select class="custom-select d-block w-100" id="state" required="">
+                            <option value="">Choose...</option>
+                            <option>California</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div> -->
+            <div class="col-md-3 mb-3">
+                <label for="Zip">Zip</label>
+                <input type="text" class="form-control" name="Zip" id="Zip" placeholder="" required="">
+                <div class="invalid-feedback">
+                    Zip code required.
+                </div>
+            </div>
+        </div>
+        <p>Some text in the modal.</p>
+    </form>
+</div>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
+
+
+{% endblock content %}
