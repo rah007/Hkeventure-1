@@ -12,7 +12,7 @@ a {
 
 
 ul li .nav-link {
-    margin-left: 20px;
+    margin-left: 0%;
     color: rgb(1, 26, 1);
     font-weight: bolder;
     /* background-color: green; */
@@ -53,7 +53,7 @@ img{
 }
 
 .trek-section{
-    height: 250px;
+    height: 300px;
     width: 348px;
     border: 2px green solid;
     border-radius: 10px;
@@ -76,7 +76,7 @@ img{
     /* background-color: transparent; */
     width: 100%;
     /* border: .1rem rgb(145, 95, 39) solid; */
-    /* margin-top: 5%; */
+    margin-top: -10%;
     /* border-radius: 1%; */
     /* margin-left: 0%; */
     padding-left: 2%;
@@ -140,4 +140,9 @@ h5{
     width:100%;
 
     background-color: rgb(162, 192, 169);
+}
+
+.card{
+    border: 1px rgb(129, 221, 113) solid;
+    border-radius: 1rem;
 }

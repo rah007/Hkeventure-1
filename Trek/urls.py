@@ -7,3 +7,4 @@ from Trek.views import Home_view, Home
 urlpatterns = [
     path("" , Home, name='home')
 ]  
+

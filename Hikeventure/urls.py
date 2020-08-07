@@ -28,7 +28,7 @@ admin.site.index_title = "Welcome to Hikeventure Portal"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('form/', form_data),
-    path('Home/', Home_view),
+    # path('Home/', Home_view),
     # path('form-view/', trek_form_view),
     path('test/', test_view),
     path('',     include('Trek.urls')),
