@@ -17,6 +17,7 @@ class Trek(models.Model):
     paymentMethod = models.CharField(max_length = 100,default='None')
     Pay_ID    = models.CharField(max_length = 100,default='None')
     Total_count=models.IntegerField(validators=[MaxValueValidator(99)],default=000000)
+    terms = models.CharField(max_length=100, default='None')
     Book_Date = models.DateField()
     # kk = models.IntegerField(default = 00)
     

@@ -102,8 +102,10 @@ def test(a):
     
 def Book(request,*args, **kwargs): 
     user_input= {
+    "Terms": "Yes I Agree",
     "UPIID": "BHIM UPI",
     "Gpay" : "G-PAY",
+    
     }
     if request.method == "POST":
         Name = request.POST.get('firstName')
@@ -119,6 +121,7 @@ def Book(request,*args, **kwargs):
         Pay_ID    = request.POST.get('Pay-ID')
         # kk = test(5)
         Total_count    = request.POST.get('total_count')
+        terms = request.POST.get('terms')
 
         # Trek_Date = datetime.strptime((request.POST.get('TrekDate')), '%Y-%m-%d')
         trek      = Trek(Name=Name, Last_Name=Last_Name, Adventure=Adventure,
@@ -128,10 +131,11 @@ def Book(request,*args, **kwargs):
                          paymentMethod=paymentMethod,Pay_ID=Pay_ID,
                          # kk=kk,
                          Total_count=Total_count,
+                         terms=terms,
                          Book_Date=datetime.today()
                          )
         trek.save() 
-        messages.success(request, 'Profile details updated.')
+        messages.success(request, 'Your trek booking process has been initialized. We will send you the payment request on the PAY-ID provided by you and send you the confirmation E-mail. Thank you for choosing Us.')
 
     return  render(request, "trek_v2/Book.html", user_input)
 
