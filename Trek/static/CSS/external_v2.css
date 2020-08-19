@@ -67,6 +67,7 @@ img{
     border-radius: 1000px;   
 }
 
+
 .container{
     background-color: rgb(243, 233, 233);
     /* height: ; */
@@ -146,3 +147,14 @@ h5{
     border: 1px rgb(129, 221, 113) solid;
     border-radius: 1rem;
 }
+
+
+/* .image{
+    position: absolute;
+    z-index: 9999;
+    }
+    
+.values{
+    position: relative;
+    z-index: -1;
+    }  */

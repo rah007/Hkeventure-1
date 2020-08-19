@@ -1,0 +1,114 @@
+{% extends 'trek_v2/base.html' %}
+{% load static%}
+{% block title %}
+terms and condition
+{% endblock title %}
+
+{% block body %}
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <a class="navbar-brand" href="/Home"> <b>Hike>enture</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav mr-auto">
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li> -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/Treks" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Treks</b>
+                </a>
+                <div style="border: 1px green solid; width: 400%;background-color: rgb(240, 236, 230);"
+                    class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <!-- <p><a href="#C4">Jump to Chapter 4</a></p> -->
+                    <p style="padding-left: 2%;"><a href="#Chadar">Chadar Trek</a></p>
+                    <p style="padding-left: 2%;"><a href="#sham">Sham valley Trek</a></p>
+                    <p style="padding-left: 2%;"><a href="#nubra">Nubra Valley Trek</a></p>
+                    <p style="padding-left: 2%;"><a href="#markha">Marka Valley Trek</a></p>
+                    <p style="padding-left: 2%;"><a href="#stock">Stock kangri Trek</a></p>
+                    <p style="padding-left: 2%;"><a href="#snow">Snow Leopard Trek</a></p>
+                    <p style="padding-left: 2%;"><a href="#rumtse">Rumtse to TSO Morir Trek via Tsokar Lake</a>
+                    </p>
+                    <!--<div class="dropdown-divider"></div> -->
+                    <!--<a class="dropdown-item" href="#">Something else here</a>-->
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/road_trip" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Road Trip</b>
+                </a>
+                <div style="border: 1px green solid; width: 400%;background-color: rgb(240, 236, 230);"
+                    class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <!-- <p><a href="#C4">Jump to Chapter 4</a></p> -->
+                    <p style="padding-left: 2%;"><a href="#srinagar">Srinagar - Leh via Khardungla Pass, Road
+                            Trip</a></p>
+                    <p style="padding-left: 2%;"><a href="#darcha">Leh - Darcha via kargil - Shinkula pass, Road
+                            Trip</a>
+                    </p>
+                    <!-- <a class="nav-link" href="/road_trip"><b>Road Trip</b></a> -->
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/river_rafting" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>River Rafting</b>
+                </a>
+                <div style="border: 1px green solid; width: 200%;background-color: rgb(240, 236, 230);"
+                    class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <!-- <p><a href="#C4">Jump to Chapter 4</a></p> -->
+                    <p style="padding-left: 2%;"><a href="#zanskar">Zanskar River Rafting</a></p>
+                    <p style="padding-left: 2%;"><a href="#indus">Indus River Rafting</a></p>
+                    <!-- <a class="nav-link" href="/river_rafting"><b>River Rafting</b></a> -->
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/river_rafting" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <b>Rock Climbing</b>
+                </a>
+                <div style="border: 1px green solid; width: 200%;background-color: rgb(240, 236, 230);"
+                    class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <p style="padding-left: 2%;"><a href="#suru">Suru Valley Rock climbing</a></p>
+                    <p style="padding-left: 2%;"><a href="#shey">Shey Valley Rock climbing</a></p>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="/Contact"><b>Contact US</b></a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="/About"><b>About/Contact US</b></a>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+
+
+<!-- End NAV -->
+<div style="margin: 5%; border: 2px black solid; background-color: green;">
+    <h3 style="color: aliceblue; margin-left: 40%;">|Website Privacy|</h3>
+</div>
+
+<div style="margin: 5%; margin-top: -1%; border: 2px black solid; background-color: green;">
+    <h3 style="color: aliceblue; margin-left: 35%;">your information privacy</h3>
+    <div>
+        <p>
+            Hikeventure ensuring you that information provided by you will be utilize with purpose of contact you and update you
+            regarding any changes in schedule or dates for the trip or trek.
+            This policy will be effective from 00/00/2020. Hikeventure will try at it's best to keep your contact
+            details safe and make sure nobody can misuse of the same.
+
+        </p>
+    </div>
+</div>
+{% endblock body %}

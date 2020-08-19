@@ -19,7 +19,7 @@ from django.urls import path, include
 from Trek.views import form_data, Home_view, test_view
 
 from Trek.views import Home, Treks, Road_Trip, River_Rafting, Contact,About,Details, Book
-# from Trek.views import Details
+from Trek.views import nubra,sham,markha,leopard,srinagar,darcha,Tso,zanskar,indus,suru,shey,terms,privacy
 
 admin.site.site_header = "Hikeventure Admin"
 admin.site.site_title = "Hikeventure Admin Portal"
@@ -38,6 +38,19 @@ urlpatterns = [
     path('road_trip/', Road_Trip),
     path('river_rafting/', River_Rafting),
     path('Contact/', Contact),
+    path('nubra/', nubra),
+    path('sham/', sham),
+    path('markha/', markha),
+    path('leopard/', leopard),
+    path('srinagar/', srinagar),
+    path('darcha/', darcha),
+    path('Tso/', Tso),
+    path('zanskar/', zanskar),
+    path('indus/', indus),
+    path('suru/', suru),
+    path('shey/', shey),
+    path('terms/', terms),
+    path('privacy/', privacy),
     path('About/', About),
     # path('Details/', Details),
     path('Book/', Book),

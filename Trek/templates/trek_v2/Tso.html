@@ -1,0 +1,290 @@
+{% extends 'trek_v2/base.html' %}
+{% load static %}
+{% block title %}
+View
+{% endblock title %}
+{% block body %}
+<div class="main-wrapper">
+    <div class="menu-holder">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <a class="navbar-brand" href="#"> <b>Hike>enture</b></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav mr-auto">
+                    <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Home</a>
+                </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/Treks" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b>Treks</b>
+                        </a>
+                        <div style="border: 1px green solid; width: 400%;background-color: rgb(240, 236, 230);"
+                            class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <!-- <p><a href="#C4">Jump to Chapter 4</a></p> -->
+                            <p style="padding-left: 2%;"><a href="#Chadar">Chadar Trek</a></p>
+                            <p style="padding-left: 2%;"><a href="#sham">Sham valley Trek</a></p>
+                            <p style="padding-left: 2%;"><a href="#nubra">Nubra Valley Trek</a></p>
+                            <p style="padding-left: 2%;"><a href="#markha">Marka Valley Trek</a></p>
+                            <p style="padding-left: 2%;"><a href="#stock">Stock kangri Trek</a></p>
+                            <p style="padding-left: 2%;"><a href="#snow">Snow Leopard Trek</a></p>
+                            <p style="padding-left: 2%;"><a href="#rumtse">Rumtse to TSO Morir Trek via Tsokar Lake</a>
+                            </p>
+                            <!--<div class="dropdown-divider"></div> -->
+                            <!--<a class="dropdown-item" href="#">Something else here</a>-->
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/road_trip" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b>Road Trip</b>
+                        </a>
+                        <div style="border: 1px green solid; width: 400%;background-color: rgb(240, 236, 230);"
+                            class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <!-- <p><a href="#C4">Jump to Chapter 4</a></p> -->
+                            <p style="padding-left: 2%;"><a href="#srinagar">Srinagar - Leh via Khardungla Pass, Road
+                                    Trip</a></p>
+                            <p style="padding-left: 2%;"><a href="#darcha">Leh - Darcha via kargil - Shinkula pass, Road
+                                    Trip</a>
+                            </p>
+                            <!-- <a class="nav-link" href="/road_trip"><b>Road Trip</b></a> -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/river_rafting" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b>River Rafting</b>
+                        </a>
+                        <div style="border: 1px green solid; width: 200%;background-color: rgb(240, 236, 230);"
+                            class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <!-- <p><a href="#C4">Jump to Chapter 4</a></p> -->
+                            <p style="padding-left: 2%;"><a href="#zanskar">Zanskar River Rafting</a></p>
+                            <p style="padding-left: 2%;"><a href="#indus">Indus River Rafting</a></p>
+                            <!-- <a class="nav-link" href="/river_rafting"><b>River Rafting</b></a> -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/river_rafting" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b>Rock Climbing</b>
+                        </a>
+                        <div style="border: 1px green solid; width: 200%;background-color: rgb(240, 236, 230);"
+                            class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <p style="padding-left: 2%;"><a href="#suru">Suru Valley Rock climbing</a></p>
+                            <p style="padding-left: 2%;"><a href="#shey">Shey Valley Rock climbing</a></p>
+                    </li>
+                    <!-- <li class="nav-item">
+                  <a class="nav-link" href="/Contact"><b>Contact US</b></a>
+                </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/About"><b>About/Contact US</b></a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- End NAV -->
+
+<div style="height: 560px;" class="container-fluid px-0">
+    <div style="height: 550px;" id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <!-- <li data-target="#carouselExampleCaptions" data-slide-to="3"></li> -->
+            <!-- <li data-target="#carouselExampleCaptions" data-slide-to="4"></li> -->
+
+        </ol>
+
+        <div style="height: 550px;" class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'images/tso/t1.jpg' %}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Nubra valley</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/tso/t2.jpeg' %}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Nubra valley</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/tso/t3.jpg' %}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Nubra valley</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/nubra trek/n1.jpg' %}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Nubra valley</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/nubra trek/n2.jpg' %}" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div style="background-color: honeydew;">
+    <h3 style="margin-left: 40%; text-decoration: underline; margin-top: 2%;">Overview</h3>
+    <ol style="margin-left: 35%;">
+        <li>Trek Name : Tso moriri Lake</li>
+        <li>Region :- Leh, Ladakh, J & K </li>
+        <li>Duration :- - Days</li>
+        <li>Grade :- Medium</li>
+        <li>Max Altitude :- 14,836 ft</li>
+        <li>Approx Trek Kms :- - Kms.</li>
+    </ol>
+
+    <div>
+        
+        <p style="padding: 5%;">
+            If we belongs to crowded cities followed by 9 - 5 Job, make our life not easy. every time weekends does not
+            brings us cheerful memories and serenity. That is why we brings you adventurous Tso moriri lake trek.</br></br>
+
+            Tso Moriri or Lake Moriri or "Mountain Lake", is a lake
+            in the Changthang Plateau (literally: northern plains) in Ladakh in Northern India. The lake and surrounding
+            area are protected as the Tso Moriri Wetland Conservation Reserve.</br></br>
+
+            The lake is at an altitude of 14,836 ft. It is the largest of the high altitude lakes entirely
+            within India and entirely within Ladakh in this Trans-Himalayan biogeographic region. It is about 16 miles
+            (26 km) north to south in length and two to three miles (3 to 5 km) wide. The lake has no outlet at present
+            and the water is brackish though not very perceptible to taste.</br></br>
+
+            The lake is fed by springs and snow-melt from the adjacent mountains. Most water enters the lake in two
+            major stream systems, one entering the lake from the north, the other from the southwest. Both stream
+            systems include extensive marshes where they enter the lake. It formerly had an outlet to the south, but
+            this has become blocked and the lake has become an endorheic lake. The lake is oligotrophic in nature, and
+            its waters are alkaline.</br></br>
+
+            Accessibility to the lake is largely limited to summer season, though Karzok on the northwest shore and the
+            military facilities on the eastern shores have year-round habitation.
+        </p>
+    </div>
+    <a style="margin-bottom: 5%; margin-left: 40%;" href="/Book"><button type="button"
+            class="btn btn-primary btn-lg">Book</button>
+    </a>
+
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Get
+        Itinerary</button>
+    <!-- Modal -->
+
+    <div class="modal fade" id="myModal" role="dialog">
+
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div style="width: 150%;" class="modal-content">
+                <div style="width: 100%;" class="query">
+                    <div class="modal-header">
+
+                        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                        <!-- <h5 class="">To enquire about Trek cotact us at: +91 6260022147</h5> -->
+                        <h5 class="modal-title">To enquire about Trek, contact us at: +91 6260022147 </br> To get the
+                            itinerary please send us your below details</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form action="." method="post"> {% csrf_token %}
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName">First name</label>
+                                    <input type="text" class="form-control" name="firstName" id="firstName"
+                                        placeholder="" value="" required="">
+                                    <div class="invalid-feedback">
+                                        Valid first name is required.
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" class="form-control" name="lastName" id="lastName" placeholder=""
+                                        value="" required="">
+                                    <div class="invalid-feedback">
+                                        Valid last name is required.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-9 mb-3">
+                                    <label class="trekoption my-0" for="Adventure">Choose your Adventure </label></br>
+                                    <small>Trek-Road Trip-Rock Climbing-River Rafting</small>
+                                    <select class="custom-select d-block w-100" name="Adventure" id="Adventure"
+                                        required="">
+                                        <option value="">Choose...</option>
+                                        <option>Chadar Trek</option>
+                                        <!-- <option>Siachen Base Camp</option> -->
+                                        <option>Nubra Valley</option>
+                                        <option>Sham valley Home stay Summer/Winter Trek</option>
+                                        <option>Snow Leopard Trek</option>
+                                        <option>Markha Valley Home stay Trek</option>
+                                        <option>Stock kangri Trek</option>
+                                        <option>Rumtse To Tso moriri Lake Trek</option>
+                                        <option>Manali to Leh Road Trip</option>
+                                        <option>Srinagar to Leh Road Trip</option>
+                                        <option>Leh to Darcha via singkula Road Trip</option>
+                                        <option>Shey Valley Rock climbing</option>
+                                        <option>Suru valley Rock climbing</option>
+                                    </select>
+                                    <!-- <input type="text" class="form-control" name="Trek Name" id="firstName" placeholder="" value="" required=""> -->
+                                    <div class="invalid-feedback">
+                                        Valid input is required.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="Email">Email </label>
+                                    <input type="email" class="form-control" name="Email" id="Email"
+                                        placeholder="you@example.com" value="" required="">
+                                    <div class="invalid-feedback">
+                                        Please enter a valid email address.
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="MobNo">Phone No</label>
+                                    <input type="number" class="form-control" name="MobNo" id="MobNo" placeholder=""
+                                        required="">
+                                    <div class="invalid-feedback">
+                                        Please enter your Phone number.
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="message">Comments:</label>
+                                <textarea id="message" name="message" rows="4" cols="50"
+                                    placeholder="Comments"></textarea>
+                            </div>
+                            <button class="btn btn-success" type="submit">Send</button>
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- pop up section end -->
+
+</div>
+
+{% endblock body %}

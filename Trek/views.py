@@ -9,6 +9,7 @@ from datetime import datetime
 from .models import Trek
 from .models import Details
 from django import forms
+from django.contrib import messages
 
 # from Hikeventure import settings
 
@@ -42,8 +43,51 @@ def Road_Trip(request,*args, **kwargs):
 def River_Rafting(request,*args, **kwargs):  
     return  render(request, "trek_v2/river_rafting.html", {})
 
+# Trek names staet
+    
 def Contact(request,*args, **kwargs):  
-    return  render(request, "trek_v2/contact.html", {})
+    # chadar trek
+    return  render(request, "trek_v2/contact.html", {}) 
+
+def nubra(request,*args, **kwargs):  
+    return  render(request, "trek_v2/nubra.html", {})
+
+def sham(request,*args, **kwargs):  
+    return  render(request, "trek_v2/sham.html", {})
+
+def markha(request,*args, **kwargs):  
+    return  render(request, "trek_v2/markha.html", {})
+
+def leopard(request,*args, **kwargs):  
+    return  render(request, "trek_v2/leopard.html", {})
+
+def Tso(request,*args, **kwargs):  
+    return  render(request, "trek_v2/Tso.html", {})
+
+def srinagar(request,*args, **kwargs):  
+    return  render(request, "trek_v2/srinagar.html", {})
+
+def darcha(request,*args, **kwargs):  
+    return  render(request, "trek_v2/darcha.html", {})
+
+def zanskar(request,*args, **kwargs):  
+    return  render(request, "trek_v2/zanskar.html", {})
+
+def indus(request,*args, **kwargs):  
+    return  render(request, "trek_v2/indus.html", {})
+
+def suru(request,*args, **kwargs):  
+    return  render(request, "trek_v2/suru.html", {})
+
+def shey(request,*args, **kwargs):  
+    return  render(request, "trek_v2/shey.html", {})
+
+def terms(request,*args, **kwargs):  
+    return  render(request, "trek_v2/terms.html", {})
+
+def privacy(request,*args, **kwargs):  
+    return  render(request, "trek_v2/privacy.html", {})
+# Trek names end
 
 def About(request,*args, **kwargs):  
     return  render(request, "trek_v2/About.html", {})
@@ -73,8 +117,8 @@ def Book(request,*args, **kwargs):
         Zip       = request.POST.get('Zip')
         paymentMethod = request.POST.get('paymentMethod')
         Pay_ID    = request.POST.get('Pay-ID')
-        kk = test(5)
-        
+        # kk = test(5)
+        Total_count    = request.POST.get('total_count')
 
         # Trek_Date = datetime.strptime((request.POST.get('TrekDate')), '%Y-%m-%d')
         trek      = Trek(Name=Name, Last_Name=Last_Name, Adventure=Adventure,
@@ -82,10 +126,12 @@ def Book(request,*args, **kwargs):
                          Email=Email, Mob_No=Mob_No, Country=Country,
                          State=State, Zip=Zip, 
                          paymentMethod=paymentMethod,Pay_ID=Pay_ID,
-                         kk=kk,
+                         # kk=kk,
+                         Total_count=Total_count,
                          Book_Date=datetime.today()
                          )
         trek.save() 
+        messages.success(request, 'Profile details updated.')
 
     return  render(request, "trek_v2/Book.html", user_input)
 
