@@ -15,8 +15,8 @@ Details
 <p>rplace me</p>
 
 <div class="col-md-8 order-md-1">
-    <h5 class="mb-0">To enquire about Trek cotact us at: +91 6260022147</h5>
-    <h5 class="mb-3">Please fill up the below details:</h5>
+    <h5 class="mb-0">Contact Us: +91 6260022147</h5>
+    <h5 class="mb-3">Please fill out the details below:</h5>
     <hr class="mb-2">
     <form action="." method="post"> {% csrf_token %}
         <div class="row">
@@ -25,7 +25,7 @@ Details
                 <input type="text" class="form-control" name="firstName" id="firstName" placeholder="" value=""
                     required="">
                 <div class="invalid-feedback">
-                    Valid first name is required.
+                    This is a required field.
                 </div>
             </div>
             <div class="col-md-6 mb-3">
@@ -33,34 +33,34 @@ Details
                 <input type="text" class="form-control" name="lastName" id="lastName" placeholder="" value=""
                     required="">
                 <div class="invalid-feedback">
-                    Valid last name is required.
+                    This is a required field.
                 </div>
             </div>
         </div>
         <!-- Edit -->
         <div class="row">
             <div class="col-md-9 mb-3">
-                <label class="trekoption my-0" for="Adventure">Choose your Adventure </label></br>
+                <label class="trekoption my-0" for="Adventure">Choose Your Adventure </label></br>
                 <small>Trek-Road Trip-Rock Climbing-River Rafting</small>
                 <select class="custom-select d-block w-100" name="Adventure" id="Adventure" required="">
                     <option value="">Choose...</option>
                     <option>Chadar Trek</option>
                     <!-- <option>Siachen Base Camp</option> -->
                     <option>Numra Valley</option>
-                    <option>Sham valley Home stay Summer/Winter Trek</option>
+                    <option>Sham Valley Home Stay Summer/Winter Trek</option>
                     <option>Snow Leopard Trek</option>
-                    <option>Markha Valley Home stay Trek</option>
-                    <option>Stock kangri Trek</option>
+                    <option>Markha Valley Home Stay Trek</option>
+                    <option>Stock Kangri Trek</option>
                     <option>Rumtse To Tso moriri Lake Trek</option>
-                    <option>Manali to Leh Road Trip</option>
-                    <option>Srinagar to Leh Road Trip</option>
-                    <option>Leh to Darcha via singkula Road Trip</option>
-                    <option>Shey Valley Rock climbing</option>
-                    <option>Suru valley Rock climbing</option>
+                    <option>Manali To Leh Road Trip</option>
+                    <option>Srinagar To Leh Road Trip</option>
+                    <option>Leh To Darcha Via Singkula Road Trip</option>
+                    <option>Shey Valley Rock Climbing</option>
+                    <option>Suru valley Rock Climbing</option>
                 </select>
                 <!-- <input type="text" class="form-control" name="Trek Name" id="firstName" placeholder="" value="" required=""> -->
                 <div class="invalid-feedback">
-                    Valid input is required.
+                    This is a required field.
                 </div>
             </div>
             <div class="col-md-6 mb-3">
@@ -68,7 +68,7 @@ Details
                 <input type="date" class="form-control mx-50" name="TrekDate" id="TrekDate" placeholder="" value=""
                     required="">
                 <div class="invalid-feedback">
-                    Valid Trek Date is required.
+                    This is a required field.
                 </div>
             </div>
         </div>
@@ -87,7 +87,7 @@ Details
             <label for="MobNo">Phone No</label>
             <input type="number" class="form-control" name="MobNo" id="MobNo" placeholder="" required="">
             <div class="invalid-feedback">
-                Please enter your Phone number.
+                Please enter your phone number.
             </div>
         </div>
 
@@ -101,14 +101,14 @@ Details
                 <label for="Country">Country</label>
                 <input type="text" class="form-control" name="Country" id="Country" placeholder="" value="" required="">
                 <div class="invalid-feedback">
-                    Valid Country name is required.
+                    This is a required field.
                 </div>
             </div>
             <div class="col-md-4 mb-3">
                 <label for="State">State</label>
                 <input type="text" class="form-control" name="State" id="State" placeholder="" value="" required="">
                 <div class="invalid-feedback">
-                    Valid State name is required.
+                    This is a required field.
                 </div>
             </div>
             <!-- <div class="col-md-4 mb-3">   
@@ -125,7 +125,7 @@ Details
                 <label for="Zip">Zip</label>
                 <input type="text" class="form-control" name="Zip" id="Zip" placeholder="" required="">
                 <div class="invalid-feedback">
-                    Zip code required.
+                    This is a required field.
                 </div>
             </div>
         </div>
